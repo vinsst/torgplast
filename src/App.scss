@@ -1,0 +1,554 @@
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  background: #f5f5f7;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0 2vw;
+}
+
+.header__left_logo {
+  width: 12vw;
+}
+
+.homeMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.86vw;
+  padding-bottom: 0.24vw;
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.header__left_city_container {
+  display: flex;
+  align-items: center;
+  font-family: Proxima Nova;
+  font-size: 1vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #292a2e;
+  gap: 0.5vw;
+}
+
+.header__left_city_arr {
+  width: 1.25vw;
+}
+
+.header__right_busket {
+  width: 1.25vw;
+}
+
+.header__right_phone {
+  font-family: Proxima Nova;
+  font-size: 1vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.header__right_line {
+  width: 0.05vw;
+  height: 1vw;
+  background: #60626c99;
+}
+
+.header_right {
+  gap: 0.83vw;
+  display: flex;
+  align-items: center;
+}
+
+.header__right_busket_container {
+  display: flex;
+  align-items: center;
+  gap: 0.2vw;
+}
+
+.header__right_busket_num {
+  width: 1.8vw;
+  height: 1.25vw;
+  border-radius: 1vw;
+  border: 0.05vw solid #60626c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Proxima Nova;
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+
+.header__right_phone {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.footer_container {
+  background: #292a2e;
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f5f5f7;
+  font-family: Proxima Nova;
+  font-weight: 900;
+  font-size: 10vw;
+}
+
+.catalogPnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalogPnav_left {
+  align-items: center;
+  display: flex;
+}
+
+.catalogPnav__left_catalogParr {
+  display: flex;
+  align-items: center;
+}
+
+.catalogPnav__right_navEl_sell_btn {
+  padding: 0.2vw 0.3vw;
+  gap: 0.5vw;
+  border-radius: 0.3vw;
+  background: linear-gradient(90deg, #f35816 0%, #a43b0f 100%);
+  font-family: Proxima Nova;
+  font-size: 0.6vw;
+  font-weight: 600;
+  color: #eeeeee;
+}
+
+.catalogPnav_right {
+  display: flex;
+  align-items: center;
+  gap: 1.7vw;
+}
+
+.catalogPnav {
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.catalogPnav__right_navEl {
+  display: flex;
+  align-items: center;
+}
+
+.catalogPnav__right_navEl_sell_btn {
+  margin-left: 0.2vw;
+}
+
+.catalogPnav__right_navEl_oZavode_img {
+  margin-left: 0.42vw;
+}
+
+.catalogPnav__left_img {
+  width: 1.25vw;
+}
+
+.catalogPnav__left_catalogParr_txt {
+  margin: 0 0.42vw 0 0.83vw;
+}
+
+.horizontalLine {
+  width: 100%;
+  border-bottom: 0.05vw solid #60626c26;
+  margin-bottom: 0.83vw;
+}
+
+.mainText {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 20vw;
+  border-bottom: 0.05vw solid #60626c99;
+}
+
+.mainText_left {
+  font-family: Proxima Nova;
+  font-size: 3.75vw;
+  font-weight: 600;
+  max-width: 40vw;
+  color: #292a2e;
+}
+
+.mainText_right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+  width: 40vw;
+  letter-spacing: -0.02em;
+  padding: 1.66vw 8vw 0 0;
+  font-family: Inter;
+  font-size: 0.93vw;
+  font-weight: 400;
+}
+
+.priceOnSystemContent__top_left_pricesData {
+  display: flex;
+  gap: 0.42vw;
+  align-items: center;
+}
+
+.priceOnSystemContent__top_left_pricesData_txt {
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+  color: #292a2e;
+}
+
+.priceOnSystemContent__top_left_pricesData_data {
+  color: #787b87;
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+}
+
+.priceOnSystemContent__top_left_h1 {
+  font-family: Proxima Nova;
+  font-size: 2.9vw;
+  font-weight: 600;
+  color: #f35816;
+}
+
+.priceOnSystemContent__top_left_h2 {
+  font-family: Inter;
+  font-size: 0.93vw;
+  font-weight: 400;
+  color: #292a2e;
+}
+
+.priceOnSystemContent__top_left {
+  max-width: 50vw;
+}
+
+.priceOnSystemContent__top_left_h2 {
+  max-width: 40vw;
+  margin-top: 1.66vw;
+  margin-bottom: 2vw;
+}
+
+.priceOnSystemContent__top_left_pricesData_calendar {
+  width: 1.35vw;
+}
+
+.priceOnSystemContent__top_right {
+  width: 20.5vw;
+  height: 8vw;
+  background: #60626c26;
+  border-radius: 0.42vw;
+  padding: 0.83vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.priceOnSystemContent__top_right_exelBtn {
+  font-family: Proxima Nova;
+  font-size: 0.72vw;
+  font-weight: 600;
+  color: #292a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3vw;
+  background: #fafafa;
+  width: 5vw;
+  height: 1.25vw;
+}
+
+.priceOnSystemContent__top_right_txt {
+  color: #292a2e;
+  font-family: Proxima Nova;
+  font-size: 0.93vw;
+  font-weight: 600;
+}
+
+.priceOnSystemContent_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.2vw 0 4.2vw 0;
+  border-bottom: 0.05vw solid #60626c26;
+  margin-bottom: 1.25vw;
+}
+
+.priceOnSystemContent__drenSyst_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.42vw;
+  margin-bottom: 1.66vw;
+}
+
+.priceOnSystemContent__drenSyst_txt1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceOnSystemContent__drenSyst_txt1_txt {
+  font-family: Proxima Nova;
+  font-size: 1.25vw;
+  font-weight: 600;
+  color: #292a2e;
+}
+
+.priceOnSystemContent__drenSyst_txt1_01 {
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+  color: #292a2e99;
+}
+
+.priceOnSystemContent__drenSyst_txt2 {
+  color: #292a2e99;
+  font-family: Inter;
+  font-size: 0.83vw;
+  font-weight: 400;
+}
+
+.priceOnSystemContent_propertiesPprice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+  color: #292a2e99;
+  padding: 1.66vw 1.25vw;
+  background: #fafafa;
+}
+
+.priceOnSystemContent__propertiesPprice_r {
+  margin-right: 15vw;
+}
+
+.priceOnSystemContent_tableUpStatic {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 0.72vw;
+  font-weight: 600;
+  color: #292a2e99;
+  padding: 1.66vw 1.25vw;
+  text-align: left;
+}
+
+.priceOnSystemContent__tableUpStatic_el_1 {
+  width: 22%;
+}
+
+.priceOnSystemContent__tableUpStatic_el_2 {
+  width: 13%;
+}
+
+.priceOnSystemContent_tableCont {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 0.93vw;
+  font-weight: 400;
+  color: #292a2e;
+  padding: 1.66vw 1.25vw;
+  text-align: left;
+}
+
+.priceOnSystemContent__tableUpStatic_el_1_cont {
+  font-family: Proxima Nova;
+  font-size: 0.93vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #292a2e;
+}
+
+.orange {
+  color: #f35816;
+}
