@@ -4,7 +4,6 @@ import ShevronDown from "../assets/img/ShevronDown.svg";
 import Term from "../assets/img/Term.svg";
 import burger from "../assets/img/burger.svg";
 import TableOne from "../components/TableOne.jsx";
-import TableOneSmallScreen from "../components/TableOneSmallScreen.jsx";
 
 function Main() {
   return (
@@ -13,7 +12,7 @@ function Main() {
         <div className="catalogPnav_left">
           <img src={Menu} alt="" className="catalogPnav__left_img" />
           <div className="catalogPnav__left_catalogParr">
-            <div className="catalogPnav__left_catalogParr_txt">КАТАЛОГ</div>
+            <p className="catalogPnav__left_catalogParr_txt">КАТАЛОГ</p>
             <img
               src={ShevronDown}
               alt=""
@@ -49,30 +48,30 @@ function Main() {
           <div className="catalogPnav__right_numTel">+7 (343) 237-23-72</div>
         </div>
       </nav>
-      <div className="mainText">
-        <div className="mainText_left">Спасибо за ваши контактные данные</div>
+      <section className="mainText">
+        <h1 className="mainText_left">Спасибо за ваши контактные данные</h1>
         <div className="mainText_right">
-          <div className="mainText__right_top">
+          <h2 className="mainText__right_top">
             Наш менеджер свяжется с вами в течение 15 минут и поможет подобрать
             дренажную систему для вашего участка. Ниже вы можете ознакомиться с
             ценами.
-          </div>
-          <div className="mainText__right_btn">
+          </h2>
+          <h2 className="mainText__right_btn">
             Мы ответственно относимся к сохранности данных наших клиентов и не
             передаем их третьим лицам.
-          </div>
+          </h2>
         </div>
-      </div>
+      </section>
       <div className="priceOnSystemContent">
-        <div className="priceOnSystemContent_top">
+        <sectin className="priceOnSystemContent_top">
           <div className="priceOnSystemContent__top_left">
-            <div className="priceOnSystemContent__top_left_h1">
+            <p className="priceOnSystemContent__top_left_h1">
               Прайс на дренажную систему ЛАЙТРОК и комплектующие
-            </div>
-            <div className="priceOnSystemContent__top_left_h2">
+            </p>
+            <p className="priceOnSystemContent__top_left_h2">
               При заказе дренажной системы в больших объемах вы получаете
               персональную скидку на саму систему и на комплектующие.
-            </div>
+            </p>
             <div className="priceOnSystemContent__top_left_pricesData">
               <img
                 src={Term}
@@ -87,16 +86,16 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="priceOnSystemContent__top_right">
+          <section className="priceOnSystemContent__top_right">
             <div className="priceOnSystemContent__top_right_exelBtn">
               Таблица Exel
             </div>
             <div className="priceOnSystemContent__top_right_txt">
               Прайс на дренаж ЛАЙТРОК и комплектующие
             </div>
-          </div>
-        </div>
-        <div className="priceOnSystemContent__drenSyst_container">
+          </section>
+        </sectin>
+        <section className="priceOnSystemContent__drenSyst_container">
           <div className="priceOnSystemContent__drenSyst_txt1">
             <div className="priceOnSystemContent__drenSyst_txt1_txt">
               Дренажная система ЛАЙТРОК
@@ -107,7 +106,7 @@ function Main() {
             Стоимость указана в информационных целях и не является публичной
             офертой
           </div>
-        </div>
+        </section>
         <div className="priceOnSystemContent_propertiesPprice">
           <div className="priceOnSystemContent__propertiesPprice_l">
             Характеристики
@@ -116,7 +115,7 @@ function Main() {
             Цена зависит от объема заказа, руб/пог.м
           </div>
         </div>
-        <div className="tableScrollingWrapper">
+        <section className="tableScrollingWrapper">
           <div className="tableScrollingPartBigScreen">
             <div className="priceOnSystemContent_tableUpStatic">
               <div className="priceOnSystemContent__tableUpStatic_el_1">
@@ -172,14 +171,14 @@ function Main() {
                 От 501 пог.м и более
               </div>
             </div>
-            <TableOneSmallScreen />
-            <TableOneSmallScreen />
-            <TableOneSmallScreen />
-            <TableOneSmallScreen />
-            <TableOneSmallScreen />
-            <TableOneSmallScreen />
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
           </div>
-        </div>
+        </section>
       </div>
     </main>
   );
