@@ -11,7 +11,6 @@ function App() {
         <Header />
         <div className="horizontalLine"></div>
         <Main />
-        <Footer />
       </div>
     </div>
   );

@@ -2,7 +2,9 @@ import React from "react";
 import Menu from "../assets/img/Menu.svg";
 import ShevronDown from "../assets/img/ShevronDown.svg";
 import Term from "../assets/img/Term.svg";
+import burger from "../assets/img/burger.svg";
 import TableOne from "../components/TableOne.jsx";
+import TableOneSmallScreen from "../components/TableOneSmallScreen.jsx";
 
 function Main() {
   return (
@@ -37,6 +39,14 @@ function Main() {
           <div className="catalogPnav__right_navEl">Доставка и оплата</div>
           <div className="catalogPnav__right_navEl">Советы и статьи</div>
           <div className="catalogPnav__right_navEl">Контакты</div>
+        </div>
+      </nav>
+      <nav className="catalogPnav2">
+        <div className="catalogPnav_left">
+          <img src={burger} alt="" className="catalogPnav__let_burger" />
+        </div>
+        <div className="catalogPnav_right">
+          <div className="catalogPnav__right_numTel">+7 (343) 237-23-72</div>
         </div>
       </nav>
       <div className="mainText">
@@ -106,35 +116,70 @@ function Main() {
             Цена зависит от объема заказа, руб/пог.м
           </div>
         </div>
-        <div className="priceOnSystemContent_tableUpStatic">
-          <div className="priceOnSystemContent__tableUpStatic_el_1">
-            Модель системы, 3 м
+        <div className="tableScrollingWrapper">
+          <div className="tableScrollingPartBigScreen">
+            <div className="priceOnSystemContent_tableUpStatic">
+              <div className="priceOnSystemContent__tableUpStatic_el_1">
+                Модель системы, 3 м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Комплектация
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Диаметр трубы, мм
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Диаметр трубы, мм
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                От 0 до 100 пог.м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                От 151 до 500 пог.м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2 ">
+                От 501 пог.м и более
+              </div>
+            </div>
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
+            <TableOne />
           </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2">
-            Комплектация
-          </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2">
-            Диаметр трубы, мм
-          </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2">
-            Диаметр трубы, мм
-          </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2">
-            От 0 до 100 пог.м
-          </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2">
-            От 151 до 500 пог.м
-          </div>
-          <div className="priceOnSystemContent__tableUpStatic_el_2 ">
-            От 501 пог.м и более
+          <div className="tableScrollingPart">
+            <div className="priceOnSystemContent_tableUpStatic">
+              <div className="priceOnSystemContent__tableUpStatic_el_1">
+                Модель системы, 3 м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Комплектация
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Диаметр трубы, мм
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                Диаметр трубы, мм
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                От 0 до 100 пог.м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2">
+                От 151 до 500 пог.м
+              </div>
+              <div className="priceOnSystemContent__tableUpStatic_el_2 ">
+                От 501 пог.м и более
+              </div>
+            </div>
+            <TableOneSmallScreen />
+            <TableOneSmallScreen />
+            <TableOneSmallScreen />
+            <TableOneSmallScreen />
+            <TableOneSmallScreen />
+            <TableOneSmallScreen />
           </div>
         </div>
-        <TableOne />
-        <TableOne />
-        <TableOne />
-        <TableOne />
-        <TableOne />
-        <TableOne />
       </div>
     </main>
   );
