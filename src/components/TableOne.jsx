@@ -9,7 +9,9 @@ function TableOne() {
       <div className="priceOnSystemContent__tableUpStatic_el_2">
         Без колец и трубы
       </div>
-      <div className="priceOnSystemContent__tableUpStatic_el_2">–</div>
+      <div className="priceOnSystemContent__tableUpStatic_el_2">
+        &nbsp;&nbsp;&nbsp; –
+      </div>
       <div className="priceOnSystemContent__tableUpStatic_el_2">300</div>
       <div className="priceOnSystemContent__tableUpStatic_el_2 orange">863</div>
       <div className="priceOnSystemContent__tableUpStatic_el_2 orange">776</div>

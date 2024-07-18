@@ -698,7 +698,7 @@ body {
 @media (max-width: 769px) {
   .priceOnSystemContent_propertiesPprice {
     padding: 6.4vw 2.1vw;
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
 }
 
@@ -723,7 +723,7 @@ body {
 }
 @media (max-width: 769px) {
   .priceOnSystemContent_tableUpStatic {
-    font-size: 1.5vw;
+    font-size: 2.6vw;
     padding: 6.4vw 2.1vw;
   }
 }
@@ -748,7 +748,7 @@ body {
 }
 @media (max-width: 769px) {
   .priceOnSystemContent_tableCont {
-    font-size: 2vw;
+    font-size: 3.73vw;
     padding: 6.4vw 2.1vw;
   }
 }
@@ -763,7 +763,7 @@ body {
 }
 @media (max-width: 769px) {
   .priceOnSystemContent__tableUpStatic_el_1_cont {
-    font-size: 2vw;
+    font-size: 3.73vw;
   }
 }
 
@@ -820,7 +820,7 @@ body {
 }
 
 .tableScrollingPart {
-  min-width: 1000px;
+  min-width: 1800px;
 }
 
 @media (max-width: 420px) {
@@ -832,4 +832,28 @@ body {
 .tableScrollingWrapper {
   overflow-x: auto;
   white-space: nowrap;
+}
+
+@media (max-width: 650px) {
+  .tableScrollingPart {
+    min-width: 1600px;
+  }
+}
+
+@media (max-width: 350px) {
+  .tableScrollingPart {
+    min-width: 1000px;
+  }
+}
+
+@media (max-width: 650px) {
+  .priceOnSystemContent__tableUpStatic_el_1 {
+    width: 16%;
+  }
+}
+
+@media (max-width: 650px) {
+  .priceOnSystemContent__tableUpStatic_el_2 {
+    width: 14%;
+  }
 }
