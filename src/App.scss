@@ -365,9 +365,7 @@ body {
 
 @media (min-width: 770px) {
   .catalogPnav2 {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
@@ -620,7 +618,7 @@ body {
   justify-content: space-between;
   padding: 4.2vw 0 4.2vw 0;
   border-bottom: 0.05vw solid #60626c26;
-  margin-bottom: 1.25vw;
+  margin-bottom: 4.3vw;
 }
 @media (max-width: 769px) {
   .priceOnSystemContent_top {
@@ -773,49 +771,37 @@ body {
 
 @media (max-width: 769px) {
   .header__left_city_container {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (max-width: 769px) {
   .header__right_phone {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (max-width: 769px) {
   .header__right_line {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (max-width: 769px) {
   .catalogPnav {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (min-width: 770px) {
   .tableScrollingPart {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
 @media (max-width: 769px) {
   .tableScrollingPartBigScreen {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1;
+    display: none;
   }
 }
 
